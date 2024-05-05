@@ -43,6 +43,16 @@
     color: #555;
   }
 </style>
+<script type="text/javascript">
+  !function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y[t]||(y[t]={}))[e]=y[e]||{cfg:{v:"2.8.2",r:"20240503-0527"}}var n=T[t];function i(e){n[e]||(n[e]=[])}function f(e){var t=n[l.shift()];t&&(t[e]=t[e]||[])}i("initialize"),i("trackPageView");f("track")&&f("track")(l.push({v:y.version,name:C,time:(new Date).getTime(),I:y[I],e:y[D],data:{baseData:{ver:2}}}));var i=T.createElement(k);i.src=y.url,i.async=true;i.setAttribute(w,"anonymous");var o=T.getElementsByTagName(k)[0];o.parentNode.insertBefore(i,o);for(i.onload=function(){n.startTrackPage&&startTrackPage(l.shift())},i.onerror=function(){n.stopTrackPage&&stopTrackPage(l.shift())},l=[],y.disableExceptionTracking=false,n[E+"id"]=y[D].slice(0,16),n[E+"locale"]=navigator.language.replace("-","_"),s=Object.keys(E),a=0;a<s.length;a++){var r=s[a];r.substr(0,3)===E&&n[r.substr(3)][b]()===y[D][b]()&&(n[r]=y[r])}var u=Object.keys(y.cfg);a=0;for(;a<u.length;a++){var c=u[a];("string"==typeof y.cfg[c]||"number"==typeof y.cfg[c]||"boolean"==typeof y.cfg[c])&&(n.cfg[c]=y.cfg[c])}var h=document.createElement("script");h.type="text/javascript";h.src="https://browser.pipe.aria.microsoft.com/CollectorHost.js";h.async=true;h.setAttribute(w,"anonymous");document.getElementsByTagName("head")[0].appendChild(h)}(window,document,{
+      src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // Replace with correct CDN link
+      name: "Microsoft.ApplicationInsights",
+      url: "https://js.monitor.azure.com/scripts/b/ai.2.min.js",
+      cfg:{
+          instrumentationKey: "21020d2a-c550-4a92-acb0-fb924a35a0d2" // Insert your Instrumentation Key Here
+      }
+  });
+</script>
 </head>
 <body>
 <div class="banner-image"></div>
